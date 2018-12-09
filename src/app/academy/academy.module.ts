@@ -24,6 +24,8 @@ import {
 
 import {MatTableModule} from '@angular/material/table';
 import {ApprenticeListPage} from './apprentice-list.page';
+import {CohortListPage} from './cohort-list.page';
+import {ApprenticeDetailPage} from './apprentice-detail.page';
 
 @NgModule({
   imports: [
@@ -52,6 +54,8 @@ import {ApprenticeListPage} from './apprentice-list.page';
   ],
   declarations: [
     ApprenticeListPage,
+    ApprenticeDetailPage,
+    CohortListPage,
   ],
   exports: []
 

@@ -1,4 +1,6 @@
 export interface  Apprentice {
-  displayName: string;
-  id: string;
+  id: number;
+  code: string;
+  name: string;
+  email: string;
 }

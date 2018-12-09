@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'cdk-round-progressbar',
+  selector: 'trg-round-progressbar',
   templateUrl: './round-progressbar.component.html',
   styleUrls: ['./round-progressbar.component.scss']
 })

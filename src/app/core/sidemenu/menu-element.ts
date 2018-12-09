@@ -2,7 +2,7 @@ export const menus = [
   {
     'name': 'Dashboard',
     'icon': 'dashboard',
-    'link': 'dashboard',
+    'link': '/dashboard',
     'open': false,
     'chip': {'value': 1, 'color': 'accent'},
   },
@@ -16,14 +16,14 @@ export const menus = [
       {
         'name': 'All Cohorts',
         'icon': 'filter_list',
-        'link': 'academy/cohorts/list',
+        'link': '/academy/cohorts/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },
       {
         'name': 'All Apprentices',
         'icon': 'filter_list',
-        'link': 'academy/apprentices/list',
+        'link': '/academy/apprentices/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },

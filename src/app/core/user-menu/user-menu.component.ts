@@ -1,7 +1,7 @@
 import {Component, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'cdk-user-menu',
+  selector: 'trg-user-menu',
   templateUrl: './user-menu.component.html',
   styleUrls: ['./user-menu.component.scss']
 })

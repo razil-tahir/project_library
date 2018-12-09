@@ -1,16 +1,16 @@
 import {Observable} from 'rxjs';
 import {DataSource} from '@angular/cdk/collections';
-import {Apprentice} from './apprentice.model';
 import {AcademyService} from '../../services/academy.service';
+import {Cohort} from './cohort.model';
 
-export class ApprenticeDataSource extends DataSource<any> {
+export class CohortDataSource extends DataSource<any> {
 
   constructor(private academyService: AcademyService) {
     super();
   }
 
-  connect(): Observable<Apprentice[]> {
-    return this.academyService.findApprentices();
+  connect(): Observable<Cohort[]> {
+    return this.academyService.findCohorts();
   }
 
   disconnect() {

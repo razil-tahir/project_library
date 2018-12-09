@@ -2,7 +2,7 @@ import {Component, Input, OnChanges, OnInit} from '@angular/core';
 import {MediaChange, ObservableMedia} from '@angular/flex-layout';
 
 @Component({
-  selector: 'app-main',
+  selector: 'trg-main',
   templateUrl: './main.layout.html',
   styleUrls: ['./main.layout.scss']
 

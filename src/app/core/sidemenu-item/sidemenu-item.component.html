@@ -16,7 +16,7 @@
     <h3 matLine *ngIf="!iconOnly">{{ menu.name }} </h3>
   </mat-list-item>
 
-  <cdk-sidemenu-item *ngFor="let submenu of menu?.sub" [menu]="submenu" [iconOnly]="iconOnly"
-                     [secondaryMenu]="true"></cdk-sidemenu-item>
+  <trg-sidemenu-item *ngFor="let submenu of menu?.sub" [menu]="submenu" [iconOnly]="iconOnly"
+                     [secondaryMenu]="true"></trg-sidemenu-item>
 
 </mat-nav-list>
