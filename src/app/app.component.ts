@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'app';
 
   getRouteAnimation(outlet) {
-    return outlet.activatedRouteData.animation
+    return outlet.activatedRouteData.animation;
   }
 }
