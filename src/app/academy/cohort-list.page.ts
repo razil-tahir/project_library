@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {CohortDataSource} from './cohort.data-source';
-import {AcademyService} from '../../services/academy.service';
+import {Cohort} from './cohort.model';
+import {Router} from '@angular/router';
+import {CohortStatus} from './cohort-status.enum';
 
 @Component({
   selector: 'trg-cohort-list',
@@ -9,13 +10,32 @@ import {AcademyService} from '../../services/academy.service';
 })
 export class CohortListPage implements OnInit {
 
-  public columns = ['id', 'code', 'description'];
-  public dataSource: CohortDataSource;
+  public columns = ['id', 'code', 'description', 'status'];
+  public dataSource: Cohort[];
 
-  constructor(private academyService: AcademyService) {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
-    this.dataSource = new CohortDataSource(this.academyService);
+    this.dataSource = [
+      {
+        id: 1,
+        code: 'CHRT-001',
+        description: 'Cohort 01',
+        status: CohortStatus.DEPLOYED
+      },
+      {
+        id: 2,
+        code: 'CHRT-002',
+        description: 'Cohort 01',
+        status: CohortStatus.DEPLOYED
+      },
+    ];
   }
+
+  view(cohort: Cohort): void {
+    console.log(JSON.stringify(cohort));
+    this.router.navigate(['/academy/cohorts/', cohort.code]);
+  }
+
 }

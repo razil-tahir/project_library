@@ -18,16 +18,15 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 @NgModule({
   imports: [
-    CommonModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatTabsModule,
-    CoreModule,
     MatSidenavModule,
     PerfectScrollbarModule,
+    CommonModule,
+    CoreModule,
     RouterModule,
-    DashboardModule,
   ],
   declarations: [MainComponent],
   providers: [

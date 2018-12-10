@@ -9,6 +9,8 @@ import {RouterModule} from '@angular/router';
 import {appRoutes} from './app.routes';
 import {AcademyModule} from './academy/academy.module';
 import {AcademyService} from '../services/academy.service';
+import {DashboardModule} from './dashboard/dashboard.module';
+import {CohortStatusPipe} from './academy/cohort-status.pipe';
 
 
 @NgModule({
@@ -22,6 +24,7 @@ import {AcademyService} from '../services/academy.service';
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
     MainModule,
+    DashboardModule,
     AcademyModule,
   ],
   providers: [AcademyService],

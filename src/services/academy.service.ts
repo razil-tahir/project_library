@@ -14,7 +14,7 @@ export class AcademyService {
     return this.http.get<Cohort[]>('data/cohorts.json');
   }
 
-  findCohortById(id: string): Observable<Cohort> {
+  findCohortById(id: number): Observable<Cohort> {
     return this.http.get<Cohort>('data/cohort.json');
   }
 
@@ -22,7 +22,7 @@ export class AcademyService {
     return this.http.get<Apprentice[]>('data/apprentices.json');
   }
 
-  findApprenticeById(id: string): Observable<Apprentice> {
+  findApprenticeById(id: number): Observable<Apprentice> {
     return this.http.get<Apprentice>('data/apprentice.json');
   }
 }

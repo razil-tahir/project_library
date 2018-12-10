@@ -25,13 +25,12 @@ import {DashboardComponent} from './dashboard.component';
     MatTabsModule,
     MatToolbarModule,
     MatListModule,
-    Ng2OdometerModule,
-    RoundProgressModule,
     MatMenuModule,
     MatChipsModule,
     MatProgressBarModule,
+    Ng2OdometerModule,
+    RoundProgressModule,
     FormsModule,
-    ReactiveFormsModule
   ],
   declarations: [
     DashboardComponent,

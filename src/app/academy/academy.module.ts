@@ -26,19 +26,21 @@ import {MatTableModule} from '@angular/material/table';
 import {ApprenticeListPage} from './apprentice-list.page';
 import {CohortListPage} from './cohort-list.page';
 import {ApprenticeDetailPage} from './apprentice-detail.page';
+import {CohortDetailPage} from './cohort-detail.page';
+import {CohortStatusPipe} from './cohort-status.pipe';
 
 @NgModule({
   imports: [
     CommonModule,
     FlexLayoutModule,
+    ReactiveFormsModule,
+    FormsModule,
     MatButtonModule,
     MatIconModule,
     MatTabsModule,
     MatToolbarModule,
     MatListModule,
     MatStepperModule,
-    ReactiveFormsModule,
-    FormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatExpansionModule,
@@ -56,6 +58,8 @@ import {ApprenticeDetailPage} from './apprentice-detail.page';
     ApprenticeListPage,
     ApprenticeDetailPage,
     CohortListPage,
+    CohortDetailPage,
+    CohortStatusPipe,
   ],
   exports: []
 
