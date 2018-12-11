@@ -33,6 +33,13 @@ export const menus = [
         'link': '/library/members/list',
         'open': false,
         'chip': false,
+      },
+      {
+        'name': 'Book',
+        'icon': 'book',
+        'link': '/library/book/list',
+        'open': false,
+        'chip': false,
       }
     ]
   },
