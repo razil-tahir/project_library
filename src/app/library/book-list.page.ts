@@ -1,6 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
-import {Member} from './member.model';
 import {Book} from './book.model';
 import {LibraryService} from '../../services/library.service';
 
@@ -10,7 +9,7 @@ import {LibraryService} from '../../services/library.service';
   templateUrl: './book-list.page.html',
 
 })
-export class BookListPage {
+export class BookListPage implements OnInit {
 
   public columns = ['id', 'title', 'author',
     'yearPublish'];
@@ -22,13 +21,10 @@ export class BookListPage {
     this.dataSource = libraryService.findBooks();
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() : void {
+  this.dataSource = this.libraryService.findBooks();
+}
 
-  view(book: Book): void {
-    console.log(JSON.stringify(book));
-    // this.router.navigate(['/academy/students/', cohort.code]);
-  }
 
 
 }
