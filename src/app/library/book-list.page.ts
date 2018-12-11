@@ -12,18 +12,22 @@ import {LibraryService} from '../../services/library.service';
 })
 export class BookListPage {
 
-  private columns = ['id', 'title', 'author',
+  public columns = ['id', 'title', 'author',
     'yearPublish'];
-  private dataSource: Observable<Book[]>;
+  public dataSource: Observable<Book[]>;
 
 
-  constructor(
-    private libraryService: LibraryService
-  ) {
+  constructor(private libraryService: LibraryService) {
 
-    this.libraryService.findBooks().subscribe(data => {
-      console.log(data);
-    })
+    this.dataSource = libraryService.findBooks();
+  }
+
+  ngOnInit() {
+  }
+
+  view(book: Book): void {
+    console.log(JSON.stringify(book));
+    // this.router.navigate(['/academy/students/', cohort.code]);
   }
 
 
