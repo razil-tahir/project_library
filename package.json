@@ -36,6 +36,7 @@
     "ngx-quill": "^2.2.0",
     "rxjs": "^6.2.1",
     "rxjs-compat": "^6.2.1",
+    "save": "^2.3.3",
     "screenfull": "^3.3.2",
     "zone.js": "^0.8.26"
   },
