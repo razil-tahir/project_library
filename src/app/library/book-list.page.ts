@@ -1,4 +1,8 @@
 import {Component} from '@angular/core';
+import {Observable} from 'rxjs';
+import {Member} from './member.model';
+import {Book} from './book.model';
+import {LibraryService} from '../../services/library.service';
 
 
 @Component({
@@ -8,8 +12,18 @@ import {Component} from '@angular/core';
 })
 export class BookListPage {
 
+  private columns = ['id', 'title', 'author',
+    'yearPublish'];
+  private dataSource: Observable<Book[]>;
 
-  constructor() {
+
+  constructor(
+    private libraryService: LibraryService
+  ) {
+
+    this.libraryService.findBooks().subscribe(data => {
+      console.log(data);
+    })
   }
 
 

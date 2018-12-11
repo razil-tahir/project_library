@@ -30,7 +30,7 @@ import {LibraryService} from '../services/library.service';
     AcademyModule,
     LibraryModule
   ],
-  providers: [AcademyService, LibraryService],
+  providers: [AcademyService,LibraryService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
