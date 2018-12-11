@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {Member} from './member.model';
+import {Observable} from 'rxjs';
 
 
 @Component({
@@ -7,6 +9,10 @@ import {Component} from '@angular/core';
 
 })
 export class MemberListPage {
+
+  private columns = ['id', 'name', 'ic',
+    'address', 'phone', 'email'];
+  private dataSource: Observable<Member[]>;
 
 
   constructor() {
