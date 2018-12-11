@@ -9,10 +9,8 @@ import {Component} from '@angular/core';
 export class BookListPage {
 
 
-
   constructor() {
   }
-
 
 
 }

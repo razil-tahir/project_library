@@ -24,6 +24,7 @@ import {
 
 import {MatTableModule} from '@angular/material/table';
 import {BookListPage} from './book-list.page';
+import {MemberListPage} from './member-list.page';
 
 @NgModule({
   imports: [
@@ -50,7 +51,10 @@ import {BookListPage} from './book-list.page';
     MatChipsModule,
     MatButtonToggleModule,
   ],
-  declarations: [BookListPage],
+  declarations: [
+    BookListPage,
+    MemberListPage],
+
   exports: []
 
 })
