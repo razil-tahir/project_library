@@ -1,6 +1,5 @@
-import {CohortStatus} from './cohort-status.enum';
 export interface  Member {
-  id: number;
+  id: string;
   name: string;
   ic: number;
   address: string;

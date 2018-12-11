@@ -26,6 +26,10 @@ export class LibraryService {
     return this.http.get<Member>('data/member.json');
   }
 
+  findMembers(): Observable<Member[]> {
+    return this.http.get<Member[]>('data/member.json');
+  }
+
   findBooks(): Observable<Book[]> {
     return this.http.get<Book[]>('data/books.json');
   }

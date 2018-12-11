@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Member} from './member.model';
 import {Observable} from 'rxjs';
+import {LibraryService} from '../../services/library.service';
 
 
 @Component({
@@ -10,12 +11,14 @@ import {Observable} from 'rxjs';
 })
 export class MemberListPage {
 
-  private columns = ['id', 'name', 'ic',
+  public columns = ['id', 'name', 'ic',
     'address', 'phone', 'email'];
-  private dataSource: Observable<Member[]>;
+
+  public dataSource: Observable<Member[]>;
 
 
-  constructor() {
+  constructor(private libService : LibraryService) {
+    this.dataSource = libService.findMembers();
   }
 
 
