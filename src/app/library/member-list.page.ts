@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Member} from './member.model';
 import {Observable} from 'rxjs';
 import {LibraryService} from '../../services/library.service';
@@ -9,16 +9,17 @@ import {LibraryService} from '../../services/library.service';
   templateUrl: './member-list.page.html',
 
 })
-export class MemberListPage {
+export class MemberListPage implements OnInit{
 
-  public columns = ['id', 'name', 'ic',
-    'address', 'phone', 'email'];
-
+  public columns = ['id', 'name', 'ic', 'address', 'phone', 'email'];
   public dataSource: Observable<Member[]>;
 
 
   constructor(private libService : LibraryService) {
-    this.dataSource = libService.findMembers();
+  }
+
+  ngOnInit(): void {
+    this.dataSource = this.libService.findMembers();
   }
 
 
