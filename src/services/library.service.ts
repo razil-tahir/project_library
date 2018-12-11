@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
+import {Book} from '../app/library/book.model';
 
 @Injectable()
 export class LibraryService {
@@ -32,16 +33,12 @@ export class LibraryService {
     return null;
   }
 
-  findBooks(): Observable<any[]> {
-    // return this.http.get<any[]>('data/cohorts.json');
-    //TODO Raz
-    return null;
+  findBooks(): Observable<Book[]> {
+    return this.http.get<Book[]>('data/books.json');
   }
 
-  findBookById(): Observable<any> {
-    // return this.http.get<any[]>('data/cohorts.json');
-    //TODO Raz
-    return null;
+  findBookById(): Observable<Book> {
+    return this.http.get<Book>('data/book.json');
   }
 
 }
