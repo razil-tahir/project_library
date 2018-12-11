@@ -27,6 +27,13 @@ export const menus = [
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },
+      {
+        'name': 'Member',
+        'icon': 'list',
+        'link': '/library/members/list',
+        'open': false,
+        'chip': false,
+      }
     ]
   },
 ];

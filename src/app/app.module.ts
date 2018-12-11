@@ -12,6 +12,7 @@ import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {CohortStatusPipe} from './academy/cohort-status.pipe';
 import {LibraryModule} from './library/library.module';
+import {LibraryService} from '../services/library.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import {LibraryModule} from './library/library.module';
     AcademyModule,
     LibraryModule
   ],
-  providers: [AcademyService],
+  providers: [AcademyService, LibraryService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
