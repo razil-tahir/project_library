@@ -5,6 +5,7 @@ import {Book} from '../app/library/book.model';
 import {Member} from '../app/library/member.model';
 import {Staff} from '../app/library/staff.model';
 import {Fine} from '../app/library/fine.model';
+import {Fine} from '../app/library/fine.model';
 import {MemberType} from '../app/library/membership.model';
 
 @Injectable()

@@ -18,6 +18,8 @@ export const appRoutes: Routes = [{
     {path: 'academy/apprentices/list', component: ApprenticeListPage},
     {path: 'academy/apprentices/:code', component: ApprenticeDetailPage},
     {path: 'library/book/list', component: BookListPage},
+    {path: 'library/members/list', component: MemberListPage},
+    {path: 'library/book/fine', component: FineListPage},
     {path: 'library/user/members/list', component: MemberListPage},
     {path: 'library/user/staff/list', component: StaffListPage},
     {path: 'library/book/fine', component: FineListPage},
