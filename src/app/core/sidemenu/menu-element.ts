@@ -52,9 +52,23 @@ export const menus = [
         'chip': false,
       },
       {
+        'name': 'Staff List',
+        'icon': 'face',
+        'link': '/library/user/staff/list',
+        'open': false,
+        'chip': false,
+      },
+      {
         'name': 'Fine',
         'icon': 'money',
         'link': '/library/book/fine',
+        'open': false,
+        'chip': false,
+      },
+      {
+        'name': 'Lending',
+        'icon': 'book',
+        'link': '/library/book/lending',
         'open': false,
         'chip': false,
       }

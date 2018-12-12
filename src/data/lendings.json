@@ -1,0 +1,20 @@
+[
+  {
+    "id": "M1001",
+    "checkinDate": "1-12-2018",
+    "checkoutDate": "1-12-2020",
+    "status": "not available"
+  },
+  {
+    "id": "M1002",
+    "checkinDate": "11-12-2018",
+    "checkoutDate": "31-12-2018",
+    "status": "not available"
+  },
+  {
+    "id": "M1003",
+    "checkinDate": "21-12-2018",
+    "checkoutDate": "41-12-2018",
+    "status": "missing"
+  }
+]

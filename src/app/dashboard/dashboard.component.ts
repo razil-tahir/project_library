@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'trg-dashboard',
-  templateUrl: './dashboard.component.html',
+  templateUrl: './library-dashboard.html',
   styleUrls: ['./dashboard.component.scss']
 })
 
