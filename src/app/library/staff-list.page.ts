@@ -22,7 +22,8 @@ export class StaffListPage {
   ngOnInit(): void {
     this.dataSource = this.libService.findStaffs();
   }
-  view(Stafft: Staff): void {
+
+  view(Staff: Staff): void {
     console.log(JSON.stringify(Staff));
   }
 }
