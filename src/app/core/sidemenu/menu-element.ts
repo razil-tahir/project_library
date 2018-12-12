@@ -30,7 +30,7 @@ export const menus = [
       {
         'name': 'Member',
         'icon': 'list',
-        'link': '/library/members/list',
+        'link': '/library/user/members/list',
         'open': false,
         'chip': false,
       },
