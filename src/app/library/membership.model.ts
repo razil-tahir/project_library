@@ -1,16 +1,16 @@
-export interface  Member {
+export interface  Membership {
   id: string;
   name: string;
   ic: number;
   address: string;
   phone: string;
   email: string;
-  membership: Membership;
+  memberType: MemberType;
 }
 
 
-export enum  Membership {
-  PLATINUM = 1,
-  GOLD,
-  SILVER
+export enum  MemberType {
+  PLATINUM = 0,
+  GOLD = 1,
+  SILVER = 2
 }

@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Member} from './member.model';
 import {Observable} from 'rxjs';
 import {LibraryService} from '../../services/library.service';
-import {Membership} from './membership.model';
+import {Membership, MemberType} from './membership.model';
 
 
 @Component({
@@ -12,8 +12,8 @@ import {Membership} from './membership.model';
 })
 export class MembershipListPage implements OnInit{
 
-  public columns = ['id', 'name', 'ic', 'address', 'phone', 'email', Membership ];
-  public dataSource: Observable<Membership[]>;
+  public columns = ['id', 'name', 'ic', 'address', 'phone', 'email', MemberType ];
+  public dataSource: Observable<MemberType>;
 
 
   constructor(private libService : LibraryService) {

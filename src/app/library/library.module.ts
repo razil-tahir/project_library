@@ -26,6 +26,8 @@ import {MatTableModule} from '@angular/material/table';
 import {BookListPage} from './book-list.page';
 import {MemberListPage} from './member-list.page';
 import {FineListPage} from './fine-list.page';
+import {Membership} from './membership.model';
+import {MembershipListPage} from './membership-list.page';
 
 @NgModule({
   imports: [
@@ -55,7 +57,8 @@ import {FineListPage} from './fine-list.page';
   declarations: [
     BookListPage,
     MemberListPage,
-    FineListPage
+    FineListPage,
+    MembershipListPage
   ],
 
   exports: []
