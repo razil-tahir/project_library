@@ -26,8 +26,8 @@ import {MatTableModule} from '@angular/material/table';
 import {BookListPage} from './book-list.page';
 import {MemberListPage} from './member-list.page';
 import {FineListPage} from './fine-list.page';
-import {Membership} from './membership.model';
 import {MembershipListPage} from './membership-list.page';
+import {MemberTypePipe} from './member-type.pipe';
 
 @NgModule({
   imports: [
@@ -58,7 +58,8 @@ import {MembershipListPage} from './membership-list.page';
     BookListPage,
     MemberListPage,
     FineListPage,
-    MembershipListPage
+    MembershipListPage,
+    MemberTypePipe
   ],
 
   exports: []

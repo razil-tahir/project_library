@@ -6,7 +6,7 @@
     "address": "Kay-eL",
     "phone": "010-5592563",
     "email": "ecah@hotmail.com",
-    "membership:": 1
+    "memberType:": "PLATINUM"
   },
   {
     "id": "M1002",
@@ -14,7 +14,9 @@
     "ic": 912540650361,
     "address": "Johor",
     "phone": "013-5246997",
-    "email": "raz@hotmail.com"
+    "email": "raz@hotmail.com",
+    "memberType:": "PLATINUM"
+
   },
   {
     "id": "M1003",
@@ -22,7 +24,8 @@
     "ic": 980826146557,
     "address": "Kay-eL",
     "phone": "011-15466852",
-    "email": "aqym@gmail.com"
+    "email": "aqym@gmail.com",
+    "memberType:": "GOLD"
   },
   {
     "id": "M1004",
@@ -30,7 +33,26 @@
     "ic": 990609016542,
     "address": "Penang",
     "phone": "012-9272639",
-    "email": "jasdh@hotmail.com"
+    "email": "jasdh@hotmail.com",
+    "memberType:": "GOLD"
+  },
+  {
+    "id": "M1005",
+    "name": "Nor Jannah",
+    "ic": 990609016542,
+    "address": "Penang",
+    "phone": "012-9272639",
+    "email": "jasdh@hotmail.com",
+    "memberType:": "SILVER"
+  },
+  {
+    "id": "M1006",
+    "name": "Nor Jannah",
+    "ic": 990609016542,
+    "address": "Penang",
+    "phone": "012-9272639",
+    "email": "jasdh@hotmail.com",
+    "memberType:": "SILVER"
   }
 
 ]

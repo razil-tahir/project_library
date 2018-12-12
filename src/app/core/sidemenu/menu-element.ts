@@ -34,6 +34,16 @@ export const menus = [
         'open': false,
         'chip': false,
       },
+
+      {
+        'name': 'Membership',
+        'icon': 'face',
+        'link': '/library/user/membership/list',
+        'open': false,
+        'chip': false,
+      },
+
+
       {
         'name': 'Book',
         'icon': 'book',

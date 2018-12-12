@@ -9,10 +9,10 @@
     </mat-toolbar>
     <div class="table-container">
 
-      <!--show json object-->
-      <!--{{dataSource | json}}-->
+      show json object
+      {{dataSource | async | json}}
 
-      <mat-table #table [dataSource]="dataSource">
+      <mat-table #table [dataSource]="dataSource | async">
 
         <!-- id column -->
         <ng-container matColumnDef="id">
@@ -53,9 +53,7 @@
         </ng-container>
 
         <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
-        <mat-row *matRowDef="let row; columns: columns;"
-                 (click)="view(row)"></mat-row>
-
+        <mat-row *matRowDef="let row; columns: columns;" (mouseover)="view(row)" (click)="view(row)"></mat-row>
       </mat-table>
 
     </div>

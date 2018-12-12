@@ -1,3 +1,5 @@
+import {MemberType} from './membership-type.enum';
+
 export interface  Membership {
   id: string;
   name: string;
@@ -8,9 +10,3 @@ export interface  Membership {
   memberType: MemberType;
 }
 
-
-export enum  MemberType {
-  PLATINUM = 0,
-  GOLD = 1,
-  SILVER = 2
-}

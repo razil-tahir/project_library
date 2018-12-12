@@ -8,6 +8,7 @@ import {CohortDetailPage} from './academy/cohort-detail.page';
 import {BookListPage} from './library/book-list.page';
 import {MemberListPage} from './library/member-list.page';
 import {FineListPage} from './library/fine-list.page';
+import {MembershipListPage} from './library/membership-list.page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -19,5 +20,6 @@ export const appRoutes: Routes = [{
     {path: 'library/book/list', component: BookListPage},
     {path: 'library/user/members/list', component: MemberListPage},
     {path: 'library/book/fine', component: FineListPage},
+    {path: 'library/user/membership/list', component: MembershipListPage},
   ]
 }];
