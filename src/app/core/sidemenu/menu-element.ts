@@ -40,6 +40,13 @@ export const menus = [
         'link': '/library/book/list',
         'open': false,
         'chip': false,
+      },
+      {
+        'name': 'Fine',
+        'icon': 'money',
+        'link': '/library/book/fine',
+        'open': false,
+        'chip': false,
       }
     ]
   },

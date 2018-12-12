@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Book} from '../app/library/book.model';
 import {Member} from '../app/library/member.model';
+import {Fine} from '../app/library/fine.model';
 
 @Injectable()
 export class LibraryService {
@@ -38,4 +39,11 @@ export class LibraryService {
     return this.http.get<Book>('data/book.json');
   }
 
+  findFines() : Observable<Fine[]> {
+    return this.http.get<Fine[]>( 'data/fines.json');
+  }
+
+  findFine() : Observable<Fine> {
+    return this.http.get<Fine>('data/fine.json');
+  }
 }
