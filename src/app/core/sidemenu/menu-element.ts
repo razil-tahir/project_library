@@ -43,6 +43,14 @@ export const menus = [
         'chip': false,
       },
 
+      /*{
+        'name': 'Exercise',
+        'icon': 'center_focus_weak',
+        'link': '/ex/album-list',
+        'open': false,
+        'chip': false,
+      },*/
+
 
       {
         'name': 'Book',
