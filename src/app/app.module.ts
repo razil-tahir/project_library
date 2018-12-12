@@ -10,7 +10,6 @@ import {appRoutes} from './app.routes';
 import {AcademyModule} from './academy/academy.module';
 import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
-import {CohortStatusPipe} from './academy/cohort-status.pipe';
 import {LibraryModule} from './library/library.module';
 import {LibraryService} from '../services/library.service';
 

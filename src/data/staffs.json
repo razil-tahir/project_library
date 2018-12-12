@@ -1,0 +1,15 @@
+[
+  {
+  "staffId" : "ABC123",
+  "staffName" : "Haqeeem",
+  "staffIc" : "89938423-23-2346",
+  "staffAge" : 8,
+  "staffEmail" : "haqeemSolo@gmail.com",
+  "staffAddress" : "Wangsa Maju",
+  "staffBankAccount" : 8995,
+  "staffPosition" : "Leader",
+  "workingHour" : 4851,
+  "salary" : 5464
+
+  }
+]

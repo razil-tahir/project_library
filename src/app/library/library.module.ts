@@ -25,8 +25,10 @@ import {
 import {MatTableModule} from '@angular/material/table';
 import {BookListPage} from './book-list.page';
 import {MemberListPage} from './member-list.page';
+import {StaffListPage} from './staff-list.page';
 import {FineListPage} from './fine-list.page';
 import {LendingListPage} from './lending-list.page';
+import {MembershipListPage} from './membership-list.page';
 
 @NgModule({
   imports: [
@@ -57,7 +59,9 @@ import {LendingListPage} from './lending-list.page';
     BookListPage,
     MemberListPage,
     FineListPage,
-    LendingListPage
+    LendingListPage,
+    StaffListPage,
+    MembershipListPage
 
   ],
 
