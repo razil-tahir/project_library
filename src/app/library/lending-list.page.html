@@ -12,6 +12,8 @@
       <!--show json object-->
       <!--{{dataSource | json}}-->
 
+
+
       <mat-table #table [dataSource]="dataSource">
 
         <!-- id column -->
@@ -29,7 +31,7 @@
         <!-- description column -->
         <ng-container matColumnDef="checkoutDate">
           <mat-header-cell *matHeaderCellDef>Check-in</mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.checkoutDate}}</mat-cell>
+          <mat-cell *matCellDef="let row"> {{row.checkinDate}}</mat-cell>
         </ng-container>
 
         <!-- description column -->
@@ -43,6 +45,8 @@
                  (click)="view(row)"></mat-row>
 
       </mat-table>
+
+
 
     </div>
   </div>

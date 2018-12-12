@@ -22,7 +22,7 @@ export class LendingListPage implements OnInit {
 
   ngOnInit(): void {
     // @ts-ignore
-    this.dataSource = this.libService.findLending();
+    this.dataSource = this.libService.findLendings();
   }
 
 }
