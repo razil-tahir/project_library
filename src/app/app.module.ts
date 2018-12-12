@@ -12,6 +12,8 @@ import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {LibraryModule} from './library/library.module';
 import {LibraryService} from '../services/library.service';
+import {UserService} from './exercise/user.service';
+import {UserModule} from './exercise/user.module';
 
 
 @NgModule({
@@ -27,9 +29,10 @@ import {LibraryService} from '../services/library.service';
     MainModule,
     DashboardModule,
     AcademyModule,
-    LibraryModule
+    LibraryModule,
+    UserModule
   ],
-  providers: [AcademyService,LibraryService],
+  providers: [AcademyService,LibraryService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

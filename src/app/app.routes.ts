@@ -13,6 +13,8 @@ import {LendingListPage} from './library/lending-list.page';
 import {MembershipListPage} from './library/membership-list.page';
 import {AlbumDetailPage} from './ex/album-detail.page';
 import {AlbumListPage} from './ex/album-list.page';
+import {userList} from './exercise/user-list';
+import {userDetail} from './exercise/user-detail';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -23,10 +25,13 @@ export const appRoutes: Routes = [{
     {path: 'academy/apprentices/:code', component: ApprenticeDetailPage},
     {path: 'library/book/list', component: BookListPage},
     {path: 'library/members/list', component: MemberListPage},
+    {path: 'library/user/members/list', component: MemberListPage},
     {path: 'library/user/staff/list', component: StaffListPage},
     {path: 'library/book/fine', component: FineListPage},
     {path: 'library/book/lending', component: LendingListPage},
     {path: 'library/user/membership/list', component: MembershipListPage},
+    {path: 'exercise/user-list', component: userList},
+    {path: 'exercise/user-detail/:id', component: userDetail},
     {path: 'ex/album-detail/:id', component: AlbumDetailPage},
     {path: 'ex/album-list', component: AlbumListPage},
   ]
