@@ -16,55 +16,56 @@
 
         <!-- id column -->
         <ng-container matColumnDef="staffId">
-          <mat-header-cell *matHeaderCellDef> ID</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> ID : </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.staffId}}</mat-cell>
         </ng-container>
 
         <!-- code column -->
         <ng-container matColumnDef="staffName">
-          <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef>Name : </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.staffName}}</mat-cell>
         </ng-container>
 
         <!-- description column -->
         <ng-container matColumnDef="staffIc">
-          <mat-header-cell *matHeaderCellDef>IC</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef>IC : </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.staffIc}}</mat-cell>
         </ng-container>
 
+        <!-- status column -->
         <ng-container matColumnDef="staffAge">
-          <mat-header-cell *matHeaderCellDef>Address</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef>Age : </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.staffAge}}</mat-cell>
         </ng-container>
 
-        <ng-container matColumnDef="StaffEmail">
-          <mat-header-cell *matHeaderCellDef>phone</mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.StaffEmail}}</mat-cell>
+        <ng-container matColumnDef="staffEmail">
+          <mat-header-cell *matHeaderCellDef>Email : </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.staffEmail}}</mat-cell>
         </ng-container>
 
         <ng-container matColumnDef="staffAddress">
-          <mat-header-cell *matHeaderCellDef>email</mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.staffAddress}}</mat-cell>
+          <mat-header-cell *matHeaderCellDef>Address :  </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.staffAddres}}</mat-cell>
         </ng-container>
 
         <ng-container matColumnDef="staffBankAccount">
-          <mat-header-cell *matHeaderCellDef>email</mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.staffAddress}}</mat-cell>
+          <mat-header-cell *matHeaderCellDef>Bank Account : </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.staffBankAccount}}</mat-cell>
         </ng-container>
 
-        <ng-container matColumnDef="staffAddress">
-          <mat-header-cell *matHeaderCellDef>email</mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.staffAddress}}</mat-cell>
+        <ng-container matColumnDef="staffPosition">
+          <mat-header-cell *matHeaderCellDef>Staff Position : </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.staffPosition}}</mat-cell>
         </ng-container>
 
-        <ng-container matColumnDef="staffAddress">
-          <mat-header-cell *matHeaderCellDef>email</mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.staffAddress}}</mat-cell>
+        <ng-container matColumnDef="workingHour">
+          <mat-header-cell *matHeaderCellDef>Working Hour : </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.workingHour}}</mat-cell>
         </ng-container>
 
-        <ng-container matColumnDef="staffAddress">
-          <mat-header-cell *matHeaderCellDef>email</mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.staffAddress}}</mat-cell>
+        <ng-container matColumnDef="salary">
+          <mat-header-cell *matHeaderCellDef>Salary</mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.salary}}</mat-cell>
         </ng-container>
 
         <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
@@ -76,4 +77,3 @@
     </div>
   </div>
 </div>
-
