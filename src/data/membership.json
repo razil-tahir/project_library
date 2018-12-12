@@ -1,0 +1,36 @@
+[
+  {
+    "id": "M1001",
+    "name": "Nor Aishah",
+    "ic": 960202146542,
+    "address": "Kay-eL",
+    "phone": "010-5592563",
+    "email": "ecah@hotmail.com",
+    "membership:": 1
+  },
+  {
+    "id": "M1002",
+    "name": "Rizal Tahir",
+    "ic": 912540650361,
+    "address": "Johor",
+    "phone": "013-5246997",
+    "email": "raz@hotmail.com"
+  },
+  {
+    "id": "M1003",
+    "name": "Fathmul Haqeem",
+    "ic": 980826146557,
+    "address": "Kay-eL",
+    "phone": "011-15466852",
+    "email": "aqym@gmail.com"
+  },
+  {
+    "id": "M1004",
+    "name": "Nor Jannah",
+    "ic": 990609016542,
+    "address": "Penang",
+    "phone": "012-9272639",
+    "email": "jasdh@hotmail.com"
+  }
+
+]

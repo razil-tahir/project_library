@@ -4,6 +4,8 @@ import {Observable} from 'rxjs';
 import {Book} from '../app/library/book.model';
 import {Member} from '../app/library/member.model';
 import {Staff} from '../app/library/staff.model';
+import {Fine} from '../app/library/fine.model';
+import {MemberType} from '../app/library/membership.model';
 
 @Injectable()
 export class LibraryService {
@@ -19,8 +21,23 @@ export class LibraryService {
     return this.http.get<Member[]>('data/members.json');
   }
 
+  findMembership(): Observable<MemberType> {
+    return this.http.get<MemberType>('data/membership.json');
+  }
+
   findBooks(): Observable<Book[]> {
     return this.http.get<Book[]>('data/books.json');
   }
 
+  findBookById(): Observable<Book> {
+    return this.http.get<Book>('data/book.json');
+  }
+
+  findFines() : Observable<Fine[]> {
+    return this.http.get<Fine[]>( 'data/fines.json');
+  }
+
+  findFine() : Observable<Fine> {
+    return this.http.get<Fine>('data/fine.json');
+  }
 }
