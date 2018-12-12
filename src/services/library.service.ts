@@ -4,6 +4,7 @@ import {Observable} from 'rxjs';
 import {Book} from '../app/library/book.model';
 import {Member} from '../app/library/member.model';
 import {Fine} from '../app/library/fine.model';
+import {Lending} from '../app/library/lending.model';
 
 @Injectable()
 export class LibraryService {
@@ -45,5 +46,13 @@ export class LibraryService {
 
   findFine() : Observable<Fine> {
     return this.http.get<Fine>('data/fine.json');
+  }
+
+  findLendings() : Observable<Lending[]> {
+    return this.http.get<Lending[]>('data/lendings.json');
+  }
+
+  findLending() : Observable<Lending> {
+    return this.http.get<Lending>('data/lending.json');
   }
 }

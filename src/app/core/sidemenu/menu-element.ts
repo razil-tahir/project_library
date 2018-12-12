@@ -47,6 +47,13 @@ export const menus = [
         'link': '/library/book/fine',
         'open': false,
         'chip': false,
+      },
+      {
+        'name': 'Lending',
+        'icon': 'book',
+        'link': '/library/book/lending',
+        'open': false,
+        'chip': false,
       }
     ]
   },
